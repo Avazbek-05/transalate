@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Translate</title>
+    <!-- font icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <header class="bg-[#bce3cb]">
+      <div class="container1 py-2 flex items-center justify-between">
+        <a href="#"
+          ><img class="w-[50px] h-[50px]" src="./img/logo.png" alt="logo"
+        /></a>
+        <div class="flex items-center gap-3">
+          <button
+            class="border p-[4px_10px] border-[#009750] hover:bg-white transition-all duration-300 rounded-md text-[#009750]"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button
+            class="border border-[#009750] p-[4px_8px] hover:bg-white transition-all duration-300 text-[#009750] rounded-md"
+          >
+            <i class="fa-brands fa-github"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="mt-[100px]">
+      <div class="container1">
+        <div class="wrapper w-[900px] m-auto">
+          <div class="flex items-center gap-10">
+            <select
+              class="border-b pb-3 outline-none w-[50%] text-center ml-5 border-[#009750] gap-10"
+            >
+              <option value="uz">Uzbek</option>
+              <option value="ne">Nepali</option>
+              <option value="en">English</option>
+              <option value="ru">Russian</option>
+              <option value="tg">Tajik</option>
+            </select>
+            <button><i class="fa-solid text-xl fa-arrow-right-arrow-left"></i></button>
+            <select
+              class="border-b pb-3 outline-none w-[50%] text-center border-[#009750] gap-10 mr-5"
+            >
+              <option value="uz">Uzbek</option>
+              <option value="ne">Nepali</option>
+              <option value="en">English</option>
+              <option value="ru">Russian</option>
+              <option value="tg">Tajik</option>
+            </select>
+          </div>
+
+          <div class="flex items-center justify-between gap-3 mt-3">
+            <textarea
+              class="border w-[100%] h-[315px] rounded-xl p-[15px_0_0_15px] text-[20px] resize-none"
+              placeholder="Enter text"
+            ></textarea>
+            <div class="flex flex-col gap-2">
+              <button
+                class="border border-[#009750] p-[4px_8px] hover:bg-[#bce3cb] transition-all duration-300 text-[#009750] rounded-md"
+              >
+                <i class="fa-solid fa-bolt"></i>
+              </button>
+              <button
+                class="border border-[#009750] p-[4px_8px] hover:bg-[#bce3cb] transition-all duration-300 text-[#009750] rounded-md"
+              >
+                <i class="fas fa-language"></i>
+              </button>
+            </div>
+            <textarea
+              class="border w-[100%] h-[315px] rounded-xl p-[15px_0_0_15px] text-[20px] resize-none"
+              placeholder="Translate"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="./main.js"></script>
+  </body>
+</html>
