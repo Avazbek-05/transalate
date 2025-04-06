@@ -39,6 +39,7 @@
         <div class="wrapper w-[900px] m-auto">
           <div class="flex items-center gap-10">
             <select
+              id="leftLang"
               class="border-b pb-3 outline-none w-[50%] text-center ml-5 border-[#009750] gap-10"
             >
               <option value="uz">Uzbek</option>
@@ -47,13 +48,16 @@
               <option value="ru">Russian</option>
               <option value="tg">Tajik</option>
             </select>
-            <button><i class="fa-solid text-xl fa-arrow-right-arrow-left"></i></button>
+            <button >
+              <i class="fa-solid text-xl fa-arrow-right-arrow-left"></i>
+            </button>
             <select
+              id="rightLang"
               class="border-b pb-3 outline-none w-[50%] text-center border-[#009750] gap-10 mr-5"
             >
+              <option value="en">English</option>
               <option value="uz">Uzbek</option>
               <option value="ne">Nepali</option>
-              <option value="en">English</option>
               <option value="ru">Russian</option>
               <option value="tg">Tajik</option>
             </select>
@@ -61,6 +65,7 @@
 
           <div class="flex items-center justify-between gap-3 mt-3">
             <textarea
+              id="leftText"
               class="border w-[100%] h-[315px] rounded-xl p-[15px_0_0_15px] text-[20px] resize-none"
               placeholder="Enter text"
             ></textarea>
@@ -71,12 +76,15 @@
                 <i class="fa-solid fa-bolt"></i>
               </button>
               <button
+              id="translateBtn"
+                type="button"
                 class="border border-[#009750] p-[4px_8px] hover:bg-[#bce3cb] transition-all duration-300 text-[#009750] rounded-md"
               >
                 <i class="fas fa-language"></i>
               </button>
             </div>
             <textarea
+              id="rightText"
               class="border w-[100%] h-[315px] rounded-xl p-[15px_0_0_15px] text-[20px] resize-none"
               placeholder="Translate"
             ></textarea>
@@ -86,7 +94,7 @@
     </section>
 
 
-
-    <script src="./main.js"></script>
+    <script src="./js/countries.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
